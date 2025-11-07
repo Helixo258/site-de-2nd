@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teemo - Le Scout Démoniaque</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #56ccf2, #2f80ed);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #222;
+            padding: 50px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #f5a623;
+            animation: fadeIn 2s ease-out;
+        }
+      button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: #54c7f2;
+            font-weight: bold;
+            color: #fff;
+        }
+
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        main {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .intro {
+            margin-bottom: 40px;
+        }
+
+        .intro img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .intro img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .abilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .ability {
+            background-color: #1c1c1c;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #f5a623;
+        }
+
+        .ability:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .ability h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #f5a623;
+        }
+
+        .ability p {
+            font-size: 1.2em;
+            color: #ddd;
+            line-height: 1.5;
+        }
+      .skins {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        justify-items: center;
+      }
+        .skins {
+          background-color: #1c1c1c;
+          padding: 20px;
+          border-radius: 15px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          color: #f5a623;
+        }
+      .skins:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .skins h3 {
+          font-size: 1.8em;
+          margin-bottom: 15px;
+          color: #f5a623;
+        }
+        .skins p {
+            font-size: 1.2em;
+            color: #ddd;
+            line-height: 1.5;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Teemo - Le Scout Démoniaque</h1>
+      <button onclick="document.getElementById('competences').scrollIntoView();">COMPÉTENCES</button>
+      <button onclick="document.getElementById('skiins').scrollIntoView();">SKINS</button>
+
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" alt="Teemo">
+            <h4>Teemo est un champion de League of Legends connu pour sa rapidité, son esprit rusé et ses pièges empoisonnés qui rendent chaque rencontre plus dangereuse.</h4>
+          <h4>Voici les différentes répliques iconiques de Teemo:</h4>
+          <iframe width="840" height="472,5" src="https://www.youtube.com/embed/fwZpFLVL7Yg?si=iqJgmywjuUu_6uf6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+      
+        <section id="abilities">
+            <h2 id="competences">Compétences de Teemo</h2>
+            <div class="abilities">
+                <div class="ability">
+                    <h3>Guérilla <br> (Passif)</h3>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/passive/Teemo_P.png">
+                    <p>Si Teemo reste immobile et sans agir pendant un court instant, il devient invisible indéfiniment.</p>
+                </div>
+                <div class="ability">
+                    <h3>Q - Fléchette aveuglante </h3>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/spell/BlindingDart.png">
+                    <p>Un puissant venin obscurcit la vue de l'ennemi, infligeant des dégâts à la cible et l'aveuglant pendant la durée de l'effet.</p>
+                </div>
+                <div class="ability">
+                    <h3>W - Vélocité</h3>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/spell/MoveQuick.png">
+                    <p>La vitesse de déplacement de Teemo est passivement augmentée jusqu'à ce qu'il soit frappé par un champion ennemi ou une tourelle ennemie.</p>
+                </div>
+                <div class="ability">
+                    <h3>E - Tir toxique</h3>
+                  <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/spell/ToxicShot.png">
+                    <p>Toutes les attaques de Teemo empoisonnent la cible, infligeant des dégâts à l'impact puis chaque seconde pendant 4 secondes.</p>
+                </div>
+                <div class="ability">
+                    <h3>R - Piège nocif</h3>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.19.1/img/spell/TeemoRCast.png">
+                    <p>Teemo se sert d'un des champignons stockés dans son sac à dos pour lancer un piège explosif. Si un ennemi marche sur le piège, un nuage empoisonné s'en échappe, ralentit les ennemis et leur inflige des dégâts sur la durée.</p>
+                </div>
+            </div>
+        </section>
+        <h2 id="skiins">SKINS</h2>
+    </main>
+    <div class="skins">
+      <h3><br><br><br>TEEMO</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+      <h3><br><br><br>TEEMO L'ELFE HEUREUX</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_1.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+      <h3><br><br><br>TEEMO <br>ÉCLAIREUR</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_2.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>BLAIREAU</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_3.jpg" width=500/>
+                </div>
+          </div>
+    <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>ASTRONAUTE</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_4.jpg" width=500/>
+                </div>
+          </div>
+    <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>LAPIN</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_5.jpg" width=500/>
+                </div>
+          </div>
+      <br>
+    <div class="skins">
+        <h3><br><br><br>SUPER <br> TEEMO</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_6.jpg" width=500/>
+                </div>
+          </div>
+      <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>PANDA</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_7.jpg" width=500/>
+                </div>
+          </div>
+      <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO DE LA <br>SECTION <br>OMÉGA</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_8.jpg" width=500/>
+                </div>
+          </div>
+      <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>DIABLOTIN</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_14.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>ABEILLE</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_18.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>FLEUR <br>SPIRITUELLE</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_25.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>FLEUR <br>SPIRITUELLE <br> PRESTIGE</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_27.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>PYROTECHNICIEN</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_37.jpg" width=500/>
+                </div>
+          </div>
+  <br>
+    <div class="skins">
+        <h3><br><br><br>TEEMO <br>ASTRO-GROOVE</h3>
+    <div class="image">
+      <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_47.jpg" width=500/>
+                </div>
+          </div>
+   <button onclick="document.getElementById('header').scrollIntoView();">RETOUR EN HAUT DE PAGE</button>
+
+</body>
+</html>
